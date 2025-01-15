@@ -1,0 +1,22 @@
+.divi {
+  text-align: center;
+  background-color: #d6eaf8;
+}
+
+.content {
+  text-align: center;
+  background-color: #f7f7f7;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.part {
+  display: flex;
+  align-items: center; /* Kohdistaa kuvan ja tekstin pystysuunnassa keskelle */
+  gap: 10px; /* Väli kuvan ja tekstin välillä */
+}
