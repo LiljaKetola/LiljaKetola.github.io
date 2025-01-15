@@ -15,9 +15,14 @@
       <h1>Portfolio</h1>
       <h2>Lilja Ketola</h2>
 
-      <a href="frontend.html">Frontend</a>
-      <a href="ui.html">UI/UX</a>
-      <a href="testaus.html">Testaus</a>
+      <nav>
+        <ul>
+          <li><a href="frontend.html">Frontend</a></li>
+          <li><a href="ui.html">UI/UX</a></li>
+          <li><a href="testaus.html">Testaus</a></li>
+          <li><a href="index.html">Reflektio</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div class="content">
@@ -25,36 +30,40 @@
         Sovelluksen testauksessa painotettiin käyttäjäkokemuksen ja
         saavutettavuuden testaamista. Tekninen testaaminen jäi vähemmälle.
       </p>
-      <h3>Kysely</h3>
-      <p>
-        Projektin loppupuolella tein kyselyn sovelluksen potentiialisille
-        käyttäjille, joille oltiin jo projektin alussa esitelty ideaa kyselyn
-        muodossa. Kyselyn tavoitteena oli selvittää mahdollisten käyttäjien
-        kiinnostusta sovellukseen sekä selvittää onko sovellus helppokäyttöinen
-        ja saavutettava.
-      </p>
 
-      <p>
-        KUVA KYSELYSTÄ + SELITÄ KYSYMYKSET VOIT MYÖS HIEMAN AVATA VASTAUKSIA
-      </p>
+      <div class="part">
+        <h3>Kysely</h3>
+        <div class="info">
+          <p>
+            Projektin loppupuolella tein kyselyn sovelluksen potentiialisille
+            käyttäjille, joille oltiin jo projektin alussa esitelty ideaa
+            kyselyn muodossa. Kyselyn tavoitteena oli selvittää mahdollisten
+            käyttäjien kiinnostusta sovellukseen sekä selvittää onko sovellus
+            helppokäyttöinen ja saavutettava.
+          </p>
 
-      <img src="pictures/kysely_koko.jpg" />
-      <h3>EndToEnd-testaus</h3>
-      <p>
-        E2E-testauksesta tähän + kuva + selitys miksi ei enempää (google login
-        ongelma)
-      </p>
+          <img src="pictures/kysely_koko.jpg" />
+        </div>
+      </div>
+      <div class="part">
+        <h3>EndToEnd-testaus</h3>
+        <div class="info">
+          <p>
+            E2E-testeillä testattiin projektin luominen, sen tarkastelu,
+            poistaminen ja muokkaaminen. Lisäksi testattiin
+            päivityksen/merkinnän luominen. Osa ominaisuuksista jäi testaamatta,
+            koska sovelluksessa oli google login. Cypress ei salli ulkoisten
+            ikkunoiden avaamista, jolloin kirjautuminen ei onnistunut.
+            Onnsituneet E2E-testit tehtiin silloin kun kirjautuminen ei vielä
+            ollut pakollinen vaan sovellukseen pääsi suoraan.
+          </p>
 
-      <img src="pictures/e2e.jpg" />
-
-      <p>JOtain yksikkötestejä</p>
-
-      <p>
-        Kerro että lighthousea käytetty ja yritetty selvittää kuinka voisi
-        tehokkutta parannella
-      </p>
+          <img src="pictures/e2e.jpg" />
+        </div>
+      </div>
+      <div class="part">
+        <p class="opittu">Mitä opin/reflektio:</p>
+      </div>
     </div>
-
-    <p>Mitä opin/reflektio:</p>
   </body>
 </html>

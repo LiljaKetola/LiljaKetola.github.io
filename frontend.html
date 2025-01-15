@@ -9,43 +9,72 @@
   <body>
     <div class="divi">
       <h1>Portfolio</h1>
-      <a href="frontend.html">Frontend</a>
-      <a href="ui.html">UI/UX</a>
-      <a href="testaus.html">Testaus</a>
+      <nav>
+        <ul>
+          <li><a href="frontend.html">Frontend</a></li>
+          <li><a href="ui.html">UI/UX</a></li>
+          <li><a href="testaus.html">Testaus</a></li>
+          <li><a href="index.html">Reflektio</a></li>
+        </ul>
+      </nav>
     </div>
-    <p>Aloita siitä että selität frotnendin kehityksen suunnittelun</p>
-    <h3>Angular materials-- voit laittaa jtn kuvia koodista?</h3>
-    <p>POPUP</p>
-    <p>NAVI</p>
-    <p>Vielä joku</p>
-    <p>Mitä opin:</p>
-    <h3>PWA:</h3>
-    <p>
-      Sovelluksen PWA versio toimii paikallisesti koneella, mutta elastic
-      beanstlakissa olevaan versioon sitä ei saatu toimimaan. Sovelluksen
-      muuttaminen PWA:ksi aiheutti ongelmia, yllättävien ja epäselvien
-      virheilmoitusten vuoksi. Siksi sen siirtäminen pilveen venyi. Siirtäessä
-      ilmeni ongelmia, joita ei ehditty selvittämään.
-    </p>
-    <p>
-      Mitä opin: Opin lisää PWA:sta sekä virheilmoitusten selvittämisestä.
-      package.json? Tämä olisi kannattanut tehdä jo paljon aiemmin.
-    </p>
-    <img src="pictures/PWA.png" />
-    <p>PWA-versio lokaalina</p>
-    <h3>Navigaatio</h3>
-    <p>
-      Navigaatiota muutettiin usein. Oli hieman haastavaa löytää juuri sellaista
-      tutoriaalia, joka olisi vastannut omaa suunnitelmaa. Haasettta loi myös
-      ymmärtää Angular materials "toolbar" komponentin rakennetta (useita
-      sisäkkäisiä komponentteja)
-    </p>
+    <div class="content">
+      <p>Pääroolinani oli frontend.</p>
 
-    <h3>NAVI:</h3>
-    <p>KOMPONENTTIKAAVIO!!</p>
-    <p>
-      honorable mentions: PROJEKTINÄKYMÄ ja responsiivisuus ja pop-up ikkuna
-    </p>
+      <div class="part">
+        <h3>Angular materials komponentit</h3>
+
+        <h4>NAVI</h4>
+        <p>
+          Navigaatiota muutettiin usein. Oli hieman haastavaa löytää juuri
+          sellaista tutoriaalia, joka olisi vastannut omaa suunnitelmaa.
+          Haastettta loi myös ymmärtää Angular materials "toolbar" komponentin
+          rakennetta (useita sisäkkäisiä komponentteja) sekä saada se sopimaan
+          sovelluksen omaan komponenttirakenteeseen
+        </p>
+        <p>Ensimmäinen versio ison näytön navigaatiosta:</p>
+        <img src="pictures/iso_navi.png" />
+
+        <p>Viimeinen versio ison näytön navigaatiosta:</p>
+        <img src="pictures/navi_uusi.png" />
+
+        <p>POPUP</p>
+        <p>Vielä joku</p>
+        <p>Mitä opin:</p>
+      </div>
+      <div class="part">
+        <h3>PWA:</h3>
+        <p>
+          Sovelluksen PWA versio toimii paikallisesti koneella, mutta elastic
+          beanstlakissa olevaan versioon sitä ei saatu toimimaan. Sovelluksen
+          muuttaminen PWA:ksi aiheutti ongelmia, yllättävien ja epäselvien
+          virheilmoitusten vuoksi. Siksi sen siirtäminen pilveen venyi.
+          Siirtäessä ilmeni ongelmia, joita ei ehditty selvittämään.
+        </p>
+        <p>
+          Mitä opin: Opin lisää PWA:sta sekä virheilmoitusten selvittämisestä.
+          package.json? Tämä olisi kannattanut tehdä jo paljon aiemmin.
+        </p>
+        <img src="pictures/PWA.png" />
+        <p>PWA-versio lokaalina</p>
+      </div>
+
+      <div class="part">
+        <h3>Responsiivisuus</h3>
+        <p>
+          Hioin paljon sovelluksen responsiivisuutta projektin aikana. Isossa
+          osassa Angular materials komponentit olivat jo valmiiksi
+          responsiivisia mutta sovelluksessa oli muutama näkymä jotka olivat
+          hyvin erilaiset eri näytöillä. Niiden hiominen vei aikaa.
+        </p>
+      </div>
+      <div class="part">
+        <p class="opittu">Mitä opin:</p>
+        <p>Erilaisia tapoja määrittää responsiivisuus</p>
+        <p>Standalone sovelluksen ero modulaariseen (reititys yms.)</p>
+        <p></p>
+      </div>
+    </div>
   </body>
 
   <p>Ylös reflektio siitä mitä opit yms.</p>
@@ -54,6 +83,5 @@
     Luin myös paljon Angular Material Custom themestä (päätettiin jättää pois)
     sekä image optimationista
   </p>
-
-  <p>Yleisesti mitä opin frontista:</p>
+  <p>Reititys ja se että opit standalone sovellusta ymmärtämään paremmin</p>
 </html>

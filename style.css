@@ -1,6 +1,9 @@
 .divi {
   text-align: center;
   background-color: #d6eaf8;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .content {
@@ -17,6 +20,55 @@ body {
 
 .part {
   display: flex;
-  align-items: center; /* Kohdistaa kuvan ja tekstin pystysuunnassa keskelle */
+  flex-direction: column; /* Asettaa sisällön pystysuunnassa */
+  align-items: center; /* Keskittää otsikon ja sisällön vaakasuunnassa */
+  gap: 20px; /* Väli otsikon ja sisällön välillä */
+  border: 1px solid #ddd; /* Ohut harmaa reunaviiva */
+  border-radius: 8px; /* Pyöristetyt kulmat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kevyt varjostus */
+  padding: 20px; /* Sisämarginaali */
+  margin: 20px; /* Väli muihin elementteihin */
+}
+
+.info {
+  display: flex; /* Asettaa kuvan ja tekstin vierekkäin */
+  align-items: center; /* Kohdistaa sisällön pystysuunnassa keskelle */
   gap: 10px; /* Väli kuvan ja tekstin välillä */
+}
+
+h3 {
+  text-align: center;
+}
+.opittu {
+  font-weight: bold;
+}
+nav ul {
+  display: flex; /* Asettaa listan elementit vierekkäin */
+  justify-content: center; /* Keskittää linkit vaakasuunnassa */
+  list-style-type: none; /* Poistaa luettelomerkit */
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigaatiolinkeille */
+nav li {
+  margin: 0 15px; /* Lisää tilaa linkkien väliin */
+}
+
+nav a {
+  color: #fff; /* Valkoinen teksti */
+  text-decoration: none; /* Poistaa alaviivat linkeistä */
+  font-size: 18px; /* Asettaa fonttikoon */
+  font-weight: 500; /* Hieman paksumpi fontti */
+  transition: color 0.3s ease; /* Sulava väriä vaihtava siirtymä */
+}
+
+/* Hover-efekti */
+nav a:hover {
+  color: #ff6347; /* Linkin väri muuttuu oranssiksi hoverissa */
+}
+
+.title {
+  display: flex;
+  align-items: center;
 }
