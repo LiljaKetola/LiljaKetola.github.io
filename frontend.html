@@ -9,6 +9,7 @@
   <body>
     <div class="divi">
       <h1>Portfolio</h1>
+      <div><p>Lilja Ketola AD1316</p></div>
       <nav>
         <ul>
           <li><a href="frontend.html">Frontend</a></li>
@@ -24,18 +25,25 @@
       <div class="part">
         <h3>Angular materials komponentit</h3>
 
-        <h4>NAVI</h4>
+        <p>
+          Käyttimme sovelluksessa Angular materials:in valmiita komponentteja,
+          jotka helpottivat kehitystä paljon. Itse en näitä ollut aiemmin näitä
+          käyttänyt, joten opin niistä ja niiden ominaisuuksista paljon TC:n
+          aikana.
+        </p>
+
+        <h4>Navigaatio</h4>
         <p>
           Navigaatiota muutettiin usein. Oli hieman haastavaa löytää juuri
           sellaista tutoriaalia, joka olisi vastannut omaa suunnitelmaa.
-          Haastettta loi myös ymmärtää Angular materials "toolbar" komponentin
+          Haastetta loi myös ymmärtää Angular materials navigaation komponentin
           rakennetta (useita sisäkkäisiä komponentteja) sekä saada se sopimaan
-          sovelluksen omaan komponenttirakenteeseen
+          sovelluksen omaan komponenttirakenteeseen.
         </p>
-        <p>Ensimmäinen versio ison näytön navigaatiosta:</p>
+        <h5>Ensimmäinen versio ison näytön navigaatiosta:</h5>
         <img src="pictures/iso_navi.png" width="500" />
 
-        <p>Viimeinen versio ison näytön navigaatiosta:</p>
+        <h5>Viimeinen versio ison näytön navigaatiosta:</h5>
         <img src="pictures/navi_uusi.png" />
 
         <h5>Navin komponentti rakenne:</h5>
@@ -44,25 +52,39 @@
         <h5>Navi-menu html</h5>
         <img src="pictures/navi_menu.jpg" width="400" />
 
-        <h4>POPUP</h4>
+        <h4>Evästeikkuna</h4>
+
+        <p>
+          Dialogi ikkuna oli myös valmis Angular materials komponentti.
+          Ulkoasultaan se oli helppo toteuttaa.
+        </p>
 
         <img src="pictures/evaste.jpg" width="450" />
+
+        <img src="pictures/cookies_dialog.jpg" width="450" />
+        <h5>Dialogi-ikkunan toimintalogiikka</h5>
       </div>
       <div class="part">
-        <h3>PWA:</h3>
+        <h3>PWA</h3>
         <p>
-          Sovelluksen PWA versio toimii paikallisesti koneella, mutta elastic
-          beanstlakissa olevaan versioon sitä ei saatu toimimaan. Sovelluksen
-          muuttaminen PWA:ksi aiheutti ongelmia, yllättävien ja epäselvien
-          virheilmoitusten vuoksi. Siksi sen siirtäminen pilveen venyi.
-          Siirtäessä ilmeni ongelmia, joita ei ehditty selvittämään.
+          Sovelluksen PWA versio toimii paikallisesti koneella, mutta AWS
+          Elastic beanstlakissa olevaan versioon sitä ei saatu toimimaan.
+          Sovelluksen muuttaminen PWA:ksi aiheutti ongelmia, yllättävien ja
+          epäselvien virheilmoitusten vuoksi. Siksi sen siirtäminen pilveen
+          venyi. Siirtäessä ilmeni ongelmia, joita ei ehditty selvittämään.
         </p>
+
         <p>
-          Mitä opin: Opin lisää PWA:sta sekä virheilmoitusten selvittämisestä.
-          package.json? Tämä olisi kannattanut tehdä jo paljon aiemmin.
+          Lopulta selvisi, että ongelmat (virheilmoitukset) johtuivat väärästä
+          builderista. Sen vaihtamisen jälkeen pwa lähti toimimaan.
         </p>
+        <img src="pictures/angular.json_vaara.png" width="450" />
+        <h5>
+          Angular.json tiedostossa oli väärä builder. Sen vaihtamisen jälkeen
+          PWA alkoi toimimaan.
+        </h5>
         <img src="pictures/PWA.png" width="450" />
-        <p>PWA-versio lokaalina</p>
+        <h5>PWA-versio lokaalina</h5>
       </div>
 
       <div class="part">
@@ -73,6 +95,14 @@
           responsiivisia mutta sovelluksessa oli muutama näkymä jotka olivat
           hyvin erilaiset eri näytöillä. Niiden hiominen vei aikaa.
         </p>
+
+        <img src="pictures/projekti_nakyma_iso.jpg" width="450" />
+        <h5>Ison näytön projektinäkymä</h5>
+        <img src="pictures/projekti_nakyma_pieni.jpg" width="300" />
+        <h5>Pienen näytön projektinäkymä</h5>
+
+        <img src="pictures/responsiivisuus.jpg" />
+        <h5>Projektinäkymän breakpointin määrittely</h5>
       </div>
       <div class="part">
         <p class="opittu">Mitä opin:</p>
@@ -81,7 +111,7 @@
         <p>Angular Materials</p>
         <p>NgOptimizedImage</p>
         <p>Angular custom theme</p>
-        <p></p>
+        <p>Google icons/fonts</p>
       </div>
     </div>
   </body>
