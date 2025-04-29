@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="divi">
+      <p class="nimi">Lilja Ketola</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="craftfolio.html">CraftFolio-projekti</a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="item1">
+        <div class="part">
+          <div class="info">
+            <p class="kappale">
+              CraftFolio on JAMK:in Ticorporate opintojaksolla kehitetty
+              projekti. CraftFolio on käsityön harrastajille suunnattu
+              projektipäiväkirja sovellus omien projektien dokumentointiin.
+            </p>
+
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="pictures/etusivu_pieni.jpg" />
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="pictures/projekti_pieninaytto.png" />
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="pictures/projektinakyma_pieninaytto.png" />
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="pictures/merkintaluonti_pieninaytto.png" />
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="pictures/projekti-info_pieninaytto.png" />
+                <!--<div class="text">Selitysteksti tähän</div>-->
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="pictures/etusivu.jpg" />
+                <!--<div class="text">selitysteksti tähän</div>-->
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="pictures/lista.png" />
+                <!--<div class="text">selitysteksti tähän</div>-->
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="part">
+          <p class="opittu">Vastuualueeni</p>
+          <p>
+            UI/UX-suunnittelu (jaettu vastuu), frontend (jaettu vastuu), testaus
+            (painottuen e2e ja käyttäjätestaukseen)
+          </p>
+          <!--<p>
+          Vastuullani frontend puolella oli näkymien hiominen sekä
+          responsiivisuus. Käytimme projektissa Angular Materials-komponentteja,
+          jotka helpottivat kehitystä.
+        </p>-->
+        </div>
+        <div class="part">
+          <p class="opittu">Tärkeimmät opitut</p>
+          <p>
+            Ryhmätyöskentely, sovelluskehitys prosessi, GitHubin käyttäminen
+            versionhallinassa sekä ajankäytön suunnittelu.
+          </p>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="part">
+          <p class="opittu">
+            Teknologiat: Angular, Typescript, Node.js, Angular Materials, Google
+            materials, Google-login ja AWS
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName('mySlides');
+        let dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+    </script>
+  </body>
+</html>
