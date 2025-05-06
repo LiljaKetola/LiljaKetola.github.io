@@ -4,7 +4,7 @@
 
   width: 100%;
   margin: 0;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .content {
@@ -17,6 +17,7 @@
 body {
   font-family: Verdana, sans-serif;
   background-color: #f7f7f7;
+  width: 100%;
 
   align-items: center;
   margin: 0;
@@ -194,6 +195,7 @@ img {
   .part {
     padding-left: 1rem;
     margin-top: 0.5rem;
+    width: 100%;
   }
 }
 .info-boksi {
@@ -202,6 +204,7 @@ img {
 
 .container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0.5rem;
 }
 
@@ -235,13 +238,27 @@ footer {
 }
 @media only screen and (max-width: 800px) {
   .part {
-    padding-left: 1rem;
     margin-top: 1rem;
-    padding-right: 1rem;
   }
 
   .item1 {
     grid-area: 1 / span 6;
+  }
+
+  .item4 {
+    grid-area: 6 / span 6;
+  }
+
+  .item3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .item2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .slideshow-container img {
